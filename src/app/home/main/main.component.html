@@ -111,7 +111,7 @@
         </a>
       </li>
     </ul> -->
-    <div
+    <!-- <div
       class="flex justify-content-between lg:block border-top-1 lg:border-top-none border-gray-800 py-3 lg:py-0 mt-3 lg:mt-0"
     >
       <button
@@ -121,7 +121,7 @@
         class="p-button-text font-bold"
       ></button>
       <button pButton pRipple label="Register" class="ml-3 font-bold"></button>
-    </div>
+    </div> -->
   </div>
 </div>
 <div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
@@ -156,10 +156,11 @@
         </li>
       </ul>
       <button
+      (click)="openEmail()"
         type="button"
         pButton
         pRipple
-        label="Claim Your Account"
+        label="Contact Now"
         class="block mt-7 mb-7 lg:mb-0 p-button-rounded p-button-success p-button-lg font-medium"
       ></button>
     </div>
@@ -424,7 +425,7 @@
   <div class="flex justify-content-center">
     <div class="py-3 pr-8 pl-3 w-30rem hidden lg:block">
       <img
-        src="assets/images/blocks/feature/feature-timeline-3.png"
+        src="assets/images/usu_logo.png"
         alt="Image"
         class="w-full mr-8"
       />
@@ -442,20 +443,40 @@
     </div>
     <div class="py-3 pl-5 lg:pl-8 pl-3 lg:w-30rem">
       <div class="text-900 text-xl mb-2 font-medium">
-        Pharetra et ultrices neque
+       Teaching Assistant, Utah State University, Dept. Computer Science 
       </div>
       <span class="block text-700 line-height-3 mb-3"
-        >Id interdum velit laoreet id. A iaculis at erat pellentesque adipiscing
-        commodo elit at imperdiet.</span
+        > Fall 2020 - December 2020
+        </span
       >
       <div class="pt-3 border-top-1 border-300">
         <div class="mb-2 line-height-3">
-          <span class="text-900 font-medium">Egestas dui id</span> ornare arcu
-          odio ut. Mi bibendum neque egestas congue.
+          <span class="text-900 font-medium"></span> 
         </div>
         <div class="line-height-3">
-          <span class="text-900 font-medium">Sed velit dignissim</span> sodales
-          ut eu. Massa placerat duis ultricies lacus.
+          <ul>
+            <li>
+              <span class="text-900 font-medium">
+                Reviewed Code and Reinforced Web Development Concepts
+            
+            </span>
+            </li>
+            <li>
+              <span class="text-900 font-medium">
+
+                Graded assignments and provided feedback
+            
+            </span>
+            </li>
+
+            <li>
+              <span class="text-900 font-medium">
+                 
+                Developed web app to help practice some of the cybersecurity concepts taught in class
+            
+            </span>
+            </li>
+          </ul>
         </div>
       </div>
       <img
@@ -466,404 +487,15 @@
     </div>
   </div>
 </div>
-<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-  <div class="text-orange-500 text-center mb-3">VITAE TEMPUS QUAM</div>
-  <div class="font-bold text-5xl text-900 text-center mb-6">
-    Take your vision to the next level
-  </div>
-  <div class="grid grid-nogutter">
-    <div class="col-12 md:col-6 lg:col-3 p-3">
-      <div class="bg-blue-50 text-center p-5 border-round flex flex-column">
-        <i class="text-blue-500 pi pi-play text-4xl block mb-4"></i>
-        <span class="text-900 text-5xl">52000</span>
-        <div class="text-blue-700 mt-3 font-medium">Streams</div>
-      </div>
-    </div>
-    <div class="col-12 md:col-6 lg:col-3 p-3">
-      <div class="bg-purple-50 text-center p-5 border-round flex flex-column">
-        <i class="text-purple-500 pi pi-users text-4xl block mb-4"></i>
-        <span class="text-900 text-5xl">21000</span>
-        <div class="text-purple-700 mt-3 font-medium">Engagement</div>
-      </div>
-    </div>
-    <div class="col-12 md:col-6 lg:col-3 p-3">
-      <div class="bg-teal-50 text-center p-5 border-round flex flex-column">
-        <i class="text-teal-500 pi pi-camera text-4xl block mb-4"></i>
-        <span class="text-900 text-5xl">71.2h</span>
-        <div class="text-teal-700 mt-3 font-medium">Watch Time</div>
-      </div>
-    </div>
-    <div class="col-12 md:col-6 lg:col-3 p-3">
-      <div class="bg-indigo-50 text-center p-5 border-round flex flex-column">
-        <i class="text-indigo-500 pi pi-thumbs-up text-4xl block mb-4"></i>
-        <span class="text-900 text-5xl">4500</span>
-        <div class="text-indigo-700 mt-3 font-medium">Likes</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
-  <div
-    class="flex flex-wrap relative overflow-hidden"
-    style="
-      border-radius: 1rem;
-      background: radial-gradient(
-          100% 1126.49% at 100% 0%,
-          rgba(106, 200, 212, 0.4) 0%,
-          rgba(33, 33, 33, 0) 100%
-        ),
-        #212121;
-    "
-  >
-    <div class="px-6 py-8">
-      <span class="uppercase text-cyan-500 font-bold">BE THE FIRST ONE</span>
-      <div class="text-white text-medium text-5xl mt-3 mb-5">
-        Join the waitlist Today!
-      </div>
-      <button
-        pRipple
-        class="appearance-none"
-        class="p-3 bg-cyan-500 hover:bg-cyan-300 cursor-pointer transition-colors font-medium gray-900 border-none p-component transition-colors transition-duration-150"
-        style="border-radius: 35px"
-      >
-        Reserve Your Username
-      </button>
-    </div>
 
-    <img
-      src="assets/images/blocks/cta/cta-browser.png"
-      alt="Image"
-      class="static lg:absolute block mx-auto"
-      style="height: 400px; top: -2rem; right: -1rem"
-    />
-  </div>
-</div>
-<div class="surface-section px-4 py-8 md:px-6 lg:px-8 border-round">
-  <div class="overflow-x-auto">
-    <table
-      class="w-full white-space-nowrap"
-      style="border-collapse: collapse; border-spacing: 0"
-    >
-      <thead>
-        <tr>
-          <td class="surface-100 p-3">
-            <div class="text-3xl text-900 mb-2">Pricing</div>
-            <span class="text-600 line-height-3"
-              >Fringilla est ullamcorper eget nulla facilisi etiam</span
-            >
-          </td>
-          <td class="surface-100 p-3 text-center">
-            <div class="text-900 text-xl font-medium mb-3">Basic</div>
-            <div class="text-600 mb-3">
-              <span class="text-3xl text-900">$10</span> /month
-            </div>
-            <button
-              pButton
-              pRipple
-              type="button"
-              class="p-button-rounded"
-              label="Free Trial"
-            ></button>
-          </td>
-          <td class="surface-100 p-3 text-center">
-            <div class="text-900 text-xl font-medium mb-3">Premium</div>
-            <div class="text-600 mb-3">
-              <span class="text-3xl text-900">$10</span> /month
-            </div>
-            <button
-              pButton
-              pRipple
-              type="button"
-              class="p-button-rounded"
-              label="Buy Now"
-            ></button>
-          </td>
-          <td class="surface-100 p-3 text-center">
-            <div class="text-900 text-xl font-medium mb-3">Premium</div>
-            <div class="text-600 mb-3">
-              <span class="text-3xl text-900">$30</span> /month
-            </div>
-            <button
-              pButton
-              pRipple
-              type="button"
-              class="p-button-rounded p-button-outlined"
-              label="Contact Us"
-            ></button>
-          </td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Arcu purus
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Posuere felis
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Curabitur mollis
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Vitae odio
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Orci, mi
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-500 pi pi-times"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Tincidunt vulputate
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-500 pi pi-times"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-500 pi pi-times"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Quis felis
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-500 pi pi-times"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-500 pi pi-times"></i>
-          </td>
-          <td class="text-center p-medium border-bottom-1 border-200">
-            <i class="text-green-500 pi pi-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="p-3 text-900 font-medium border-bottom-1 border-200">
-            Dignissim vivamus
-          </td>
-          <td class="text-center text-600">
-            Up to <span class="text-900">5</span> files
-          </td>
-          <td class="text-center text-600">
-            Up to <span class="text-900">10</span> files
-          </td>
-          <td class="text-center text-900">Unlimited</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+
+
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-  <div
-    class="flex align-items-start lg:align-items-center lg:justify-content-between pb-5 border-bottom-1 border-300 flex-column lg:flex-row"
-  >
-    <div class="pr-0 lg:pr-8">
-      <img
-        src="assets/images/blocks/logos/bastion-700.svg"
-        alt="Image"
-        height="50"
-      />
-      <p class="text-600 line-height-3 text-xl mb-0 mt-5">
-        Consequat nisl vel pretium lectus quam. Scelerisque eu ultrices vitae
-        auctor eu augue ut lectus arcu. Integer quis auctor elit sed.
-      </p>
-    </div>
-    <button
-      pButton
-      pRipple
-      label="Get Started"
-      class="mt-5 lg:mt-0 white-space-nowrap min-w-max"
-    ></button>
-  </div>
-  <div class="py-5 border-bottom-1 border-300">
-    <div class="grid">
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3">Company</span>
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">About Us</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">News</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3"
-              >Investor Relations</a
-            >
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Careers</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Media Kit</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3"
-          >Resources</span
-        >
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Get Started</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Learn</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Case Studies</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3"
-          >Developer</span
-        >
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Courses</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Documentation</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">API Reference</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Status</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Papers</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3"
-              >Development Blog</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3"
-          >Community</span
-        >
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Discord</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Events</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">FAQ</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3">Connect</span>
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Newsletters</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Press</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Code of Conduct</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Security Guide</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Bug Bounty</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 sm:col-6 md:col-4 lg:col-2">
-        <span class="text-900 block font-bold line-height-3 mb-3">Legal</span>
-        <ul class="list-none p-0 m-0">
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Brand Policy</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3">Privacty Policy</a>
-          </li>
-          <li class="mb-2">
-            <a class="text-700 cursor-pointer line-height-3"
-              >Terms of Service</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  
   <div class="flex justify-content-between align-items-center py-5">
-    <span>&copy; 2021 Bastion Tech</span>
+    <span>&copy; 2022 Bridger Jones</span>
     <div class="flex align-items-center justify-content-between">
-      <a class="cursor-pointer text-500 md:ml-3 ml-2">
-        <i class="pi pi-twitter text-xl"></i>
-      </a>
-      <a class="cursor-pointer text-500 md:ml-3 ml-2">
-        <i class="pi pi-facebook text-xl"></i>
-      </a>
-      <a class="cursor-pointer text-500 md:ml-3 ml-2">
+      <a href="https://github.com/BridgerJones" class="cursor-pointer text-500 md:ml-3 ml-2">
         <i class="pi pi-github text-xl"></i>
       </a>
     </div>

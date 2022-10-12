@@ -12,4 +12,9 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  openEmail() {
+    window.open('mailto:bridgerjones15+bridgerjones.com@gmail.com', '_self');
+  }
+
 }
