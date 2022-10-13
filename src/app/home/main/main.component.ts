@@ -9,6 +9,7 @@ import { Experience } from 'src/classes/Experience';
 export class MainComponent implements OnInit {
 
   experience : Experience;
+  experiences : Experience[] = [];
 
   constructor() { 
     this.experience = new Experience(
@@ -24,6 +25,8 @@ export class MainComponent implements OnInit {
         'Worked on the Google Cloud Platform team',
         'Worked on the Google Cloud Platform team',
       ]);
+
+      this.experiences.push(this.experience);
 
   }
 
