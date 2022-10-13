@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience } from 'src/classes/Experience';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  experience : Experience;
+
+  constructor() { 
+    this.experience = new Experience(
+      'Google',
+      'Software Engineer',
+      new Date('2019-05-01'),
+      new Date('2020-08-01'),
+      'Worked on the Google Cloud Platform team',
+      'Mountain View, CA',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png',
+      [
+        'Worked on the Google Cloud Platform team',
+        'Worked on the Google Cloud Platform team',
+        'Worked on the Google Cloud Platform team',
+      ]);
+
+  }
 
   ngOnInit(): void {
   }
