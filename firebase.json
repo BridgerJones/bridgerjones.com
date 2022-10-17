@@ -4,13 +4,11 @@
   },
   "hosting": {
     "public": "dist/bridger-jones",
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "/index.html"
-      }
-    ],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   },
   "storage": {
     "rules": "storage.rules"
