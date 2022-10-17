@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminMainComponent } from './admin-main/admin-main.component';
 import { AuthComponent } from './auth/auth.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminRoutingModule } from './admin-routing-module';
 import { CheckboxModule } from 'primeng/checkbox';
 import { StyleClassModule } from 'primeng/styleclass';
@@ -18,6 +18,7 @@ import { StyleClassModule } from 'primeng/styleclass';
     CommonModule,
     AdminRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     CheckboxModule,
     StyleClassModule
   ]
