@@ -22,4 +22,9 @@ export class ExperienceBlockComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  convertFireDateToDate(date : any) : Date {
+    return new Date(date.seconds * 1000);
+  }
+
 }

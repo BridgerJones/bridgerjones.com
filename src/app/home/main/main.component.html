@@ -298,9 +298,9 @@
     Explore Work and Projects
   </div>
 
-  <ng-container *ngFor="let experience of experiences; index as i;">
+  <ng-container *ngFor="let experience of experiences | async; index as i;">
 
-  <app-experience-block [experience]="experience" [index]="i"></app-experience-block>
+  <app-experience-block [experience]="experience" [index]="i" [imageLeft]="i % 2 === 0"></app-experience-block>
   </ng-container>
   
   

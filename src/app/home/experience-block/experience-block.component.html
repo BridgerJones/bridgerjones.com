@@ -26,8 +26,8 @@
     <span class="block text-700 line-height-3 mb-3">
       {{ experience.position | titlecase }}<br />
       <span
-        >{{ experience.startDate | date }} to
-        {{ experience.endDate | date }}</span
+        >{{convertFireDateToDate(experience.startDate) | date }} to
+        {{ convertFireDateToDate(experience.endDate) | date }}</span
       >
     </span>
     <div class="pt-3 border-top-1 border-300">
