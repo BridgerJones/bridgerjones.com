@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   // lazy loaded home module
   {path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)},
+  {path: 'sudo', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)},
 ];
 
 @NgModule({

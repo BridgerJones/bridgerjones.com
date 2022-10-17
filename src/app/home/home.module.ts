@@ -5,11 +5,13 @@ import { HomeRoutingModule } from './home-routing-module';
 import { RippleModule } from 'primeng/ripple'
 import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
+import { ExperienceBlockComponent } from './experience-block/experience-block.component';
 
 
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
+    ExperienceBlockComponent
   ],
   imports: [
     CommonModule,
