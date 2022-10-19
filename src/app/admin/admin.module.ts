@@ -6,7 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminRoutingModule } from './admin-routing-module';
 import { CheckboxModule } from 'primeng/checkbox';
 import { StyleClassModule } from 'primeng/styleclass';
-
+import { MenuModule } from 'primeng/menu';
+import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -20,7 +22,10 @@ import { StyleClassModule } from 'primeng/styleclass';
     FormsModule,
     ReactiveFormsModule,
     CheckboxModule,
-    StyleClassModule
+    StyleClassModule,
+    MenuModule,
+    RippleModule,
+    ButtonModule
   ]
 })
 export class AdminModule { }
