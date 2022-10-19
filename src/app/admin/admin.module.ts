@@ -9,12 +9,18 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { MenuModule } from 'primeng/menu';
 import { RippleModule } from 'primeng/ripple';
 import { ButtonModule } from 'primeng/button';
+import { DividerModule } from 'primeng/divider';
+import { ExperiencesListComponent } from './experiences-list/experiences-list.component';
+import { ExperienceEditorComponent } from './experience-editor/experience-editor.component';
+import { ImageModule } from 'primeng/image';
 
 
 @NgModule({
   declarations: [
     AdminMainComponent,
     AuthComponent,
+    ExperiencesListComponent,
+    ExperienceEditorComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +31,9 @@ import { ButtonModule } from 'primeng/button';
     StyleClassModule,
     MenuModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    DividerModule,
+    ImageModule,
   ]
 })
 export class AdminModule { }
